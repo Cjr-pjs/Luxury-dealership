@@ -31,3 +31,7 @@ Visualização de itens adicionados.
 Cálculo de preços totais.
 Melhorias interativas nos cards (exemplo: mostrar mais detalhes do carro ao clicar).
 Integração com APIs para simular um sistema de estoque ou busca.
+
+📝 Observações
+Este projeto está em fase inicial e tem como objetivo principal o aprendizado e a prática de conceitos de desenvolvimento web.
+As funcionalidades planejadas serão implementadas em TypeScript, conforme o progresso do desenvolvimento.
