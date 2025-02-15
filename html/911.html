@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina de compra</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:wght@100..900&family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/911.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img id="logo" src="../Fotos/luxury_car_logo (1).png" alt="Logo da Concessionária" class="logo">
+            <ul class="nav-links">
+                <li><button><a href="index.html">Início</a></button></li>
+                <li><button><a href="#">Especial</a></button></li>
+                <li><button><a href="#">Carros</a></button></li>
+                <li><button><a href="#">Sobre-nos</a></button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Conteúdo da Página de Compra do BMW X1 -->
+    <main>
+        <class class="h1">Pagina de compra</class>
+        <div class="car-container">
+            <div class="carousel">
+                <img class="carousel-img" src="../Fotos/911-3.jpg" alt="BMW X1 - Imagem 3">
+                <img class="carousel-img" src="../Fotos/911-4.avif" alt="BMW X1 - Imagem 1">     
+                <img class="carousel-img" src="../Fotos/911-2.jpg" alt="BMW X1 - Imagem 2">         
+  
+
+                <!-- Botões de navegação -->
+                <button class="carousel-btn prev-btn">&larr;</button>
+                <button class="carousel-btn next-btn">&rarr;</button>
+            </div>
+
+            <!-- Menu de compra -->
+            <div class="purchase-menu">
+                <h2>Porsche 911 GT3 RS</h2>
+                <p>Preço: R$ 1.099.000,00</p>
+                <p>O Porsche 911 GT3 RS é um dos carros esportivos mais icônicos e performáticos do mercado, combinando tecnologia de ponta, design aerodinâmico e desempenho de alto nível. Ideal para entusiastas de carros de alto desempenho e pilotos que buscam uma experiência de condução extrema, o GT3 RS é a versão mais focada em pista da linha 911.<p> 
+
+                </p>
+
+                <button id="buy-button">Comprar</button>
+                <div class="color-selector">
+                    <h3>Escolha a cor da sua Porsche:</h3>
+                    <div class="color-options">
+                        <button class="color-btn" data-color="vermelho" style="background-color: red;"></button>
+                        <button class="color-btn" data-color="preto" style="background-color: black;"></button>
+                        <button class="color-btn" data-color="branco" style="background-color: white;"></button>
+                        <button class="color-btn" data-color="azul" style="background-color: blue;"></button>
+                        <button class="color-btn" data-color="prata" style="background-color: silver;"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../public/dist/911.js"></script>
+</body>
+</html>

@@ -1,0 +1,314 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", serif;
+}
+
+/* Corpo */
+body {
+    background: linear-gradient(135deg, #141E30, #353132);
+    color: #fff;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar button {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin: 2px;
+}
+/* Logo */
+#logo {
+    height: 125px;
+    width: auto;
+}
+
+/* Links de navegação */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+.nav-links li button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;  /* Animação suave */
+}
+
+.nav-links li button:hover {
+    background-color: #555;
+    transform: scale(1.05);  /* Aumenta o botão */
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Banner */
+.main-banner {
+    margin: 10px auto;
+    width: 95%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Cartões */
+.destaques {
+    text-align: center; /* Centraliza o texto */
+   position: relative;
+    top: 190px;
+    right: 20px;
+}
+.destaques h1 {
+    font-size: 4rem; /* Tamanho maior para destacar */
+    color: #ca0505; /* Dourado para dar um toque de luxo */
+    font-family: 'Playfair Display', serif; /* Fonte elegante */
+    font-weight: 700; /* Negrito para reforçar o impacto */
+    letter-spacing: 1.5px; /* Leve espaçamento entre letras */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5); /* Sombra mais suave e refinada */
+    border-bottom: 4px solid #b3b2b1; /* Linha dourada */
+    display: inline-block;
+    padding-bottom: 10px; /* Espaço entre o texto e a linha */
+    text-transform: uppercase; /* Mantém a elegância com letras maiúsculas */ 
+    text-shadow: 
+    0 0 10px #ff0000, /* Brilho médio */
+    0 0 40px #000000; /* Expansão do brilho */
+}
+
+@keyframes red-neon-glow {
+    0% {
+        text-shadow: 
+            0 0 5px #ffffff,
+            0 0 10px #ffffff,
+            0 0 20px #ffffff,
+            0 0 30px #ffffff,
+            0 0 40px #ffffff;
+    }
+    100% {
+        text-shadow: 
+            0 0 10px #b3b0af,
+            0 0 20px #ff0000,
+            0 0 30px #eeeeee,
+            0 0 40px #ff0000,
+            0 0 50px #B22222;
+    }
+}
+.card-audiTT{
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 20px rgba(209, 163, 163, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transição suave */
+    position: relative;
+    right: 300px;
+    top: 308px;
+    height: 375px;
+}
+.card-bmwX1 {
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 20px rgba(223, 184, 184, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transição suave */
+    position: relative;
+    right: -300px;
+    top: -90px;
+    height: 376px;
+}
+.card-porsche911 {
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 20px rgba(223, 184, 184, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transição suave */
+    position: relative;
+    right: -300px;
+    top: 50px;
+    height: 378px;
+}
+
+.card-bmw-z4{
+    width: 350px;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #1e1e1e;
+    box-shadow: 0 8px 20px rgba(223, 184, 184, 0.6);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;  /* Transição suave */
+    position: relative;
+    right: 300px;
+    top: -345px;
+    height: 375px;
+}
+
+
+/* Efeito hover nos cards */
+.card-audi:hover,
+.card-bmw:hover {
+    transform: scale(1.05);  /* Aumenta o tamanho do card */
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.8);  /* Aumenta a sombra */
+}
+
+/* Imagem do card */
+.card-image {
+    width: auto;
+    height: auto;
+    overflow: hidden; /* Oculta partes excedentes */
+    aspect-ratio: 16/9;
+}    
+
+.card-image img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        border-bottom: 1px solid #ccc; 
+    }
+
+/* Conteúdo do card */
+.card-content {
+    padding: 20px;
+    image-resolution: 100px;
+}
+
+.card-content h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+    color: #ff4500;
+}
+
+.card-content p {
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #ccc;
+}
+
+.card-price {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+}
+
+.card-price-tt{
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+}
+
+.card-price-x1 {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+}
+
+.card-price-911 {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+}
+
+.card-price-z4 {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff0000;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    color: #fff;
+}
+
+#preco {
+    font-family: 'Playfair Display', serif;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    top: 700px;
+    cursor: pointer;
+   margin: 40px auto;
+}
+
+#preco:hover {
+    border-color: #888;
+    cursor: pointer;
+    border-color: #888;
+}
+ 
+
+
+.fa-shopping-cart {
+    font-size: 25px;
+    color: #ffffff;  /* Cor do ícone */
+    position: relative;
+    top: -110px;
+    right: -180vh;
+}
