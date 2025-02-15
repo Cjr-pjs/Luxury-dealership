@@ -2,7 +2,7 @@
 Nesta nova versão do Royal Deluxe, foram implementadas melhorias significativas para tornar a experiência mais dinâmica e funcional.
 🔄 Novidades e Melhorias
 ✅ Ordenação de preços: Agora os carros podem ser organizados por menor ou maior preço através do dropdown.
-✅ Código otimizado: Melhor estruturação do HTML, CSS e JavaScript para melhor desempenho.
+✅ Código otimizado: Melhor estruturação do HTML, CSS e JavaScript Alem do typerscript para melhor desempenho.
 ✅ Correção de layout: Ajuste na organização dos cards para manter o design alinhado após a ordenação.
 🔜 Próximos Passos
 🔹 Implementação de um carrinho de compras interativo.
